@@ -69,33 +69,34 @@
 //     After the loop, maxGlobal contains the maximum subarray sum, which is returned as the result.
 
 
-public class maximumSumSubArray53 {
-  public static int optimized(int arr[]){
-    int n=arr.length;
-    // step 1
-    int maxCurrent=arr[0];
-    int maxGlobal=arr[0];
-    // step 2
-    for(int i=1; i<n; i++){
-      maxCurrent=Math.max(arr[i],maxCurrent+arr[i]);
-      // step 3
-      if(maxCurrent>maxGlobal){
+// public class maximumSumSubArray53 {
+//   public static int optimized(int arr[]){
+//     int n=arr.length;
+//     // step 1
+//     int maxCurrent=arr[0];
+//     int maxGlobal=arr[0];
+//     // step 2
+//     for(int i=1; i<n; i++){
+//       maxCurrent=Math.max(arr[i],maxCurrent+arr[i]);
+//       // step 3
+//       if(maxCurrent>maxGlobal){
 
-        maxGlobal=maxCurrent;
+//         maxGlobal=maxCurrent;
 
-      }
+//       }
 
 
-    }
-    return maxGlobal;
+//     }
+//     return maxGlobal;
 
-  }
-  public static void main(String[] args) {
-    int arr[]={-2,1,-3,4,-1,2,1,-5,4};
-    System.out.println("maximum subarray"+" "+optimized(arr));
+//   }
+//   public static void main(String[] args) {
+//     int arr[]={-2,1,-3,4,-1,2,1,-5,4};
+//     System.out.println("maximum subarray"+" "+optimized(arr));
     
     
-  }
-}
+//   }
+// }
+
 
 
